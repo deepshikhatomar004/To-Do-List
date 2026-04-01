@@ -27,4 +27,4 @@ A simple and responsive To-Do List application built using HTML, CSS, and JavaSc
 ![App Screenshot](screenshot.jpeg)
 
 ## 🔗 Live Demo
-(Coming soon)
+https://deepshikhatomar004.github.io/To-Do-List/
