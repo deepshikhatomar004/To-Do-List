@@ -23,7 +23,8 @@ A simple and responsive To-Do List application built using HTML, CSS, and JavaSc
 - Use local storage
 
 ## 📸 Screenshot
-(Add screenshot here)
+
+![App Screenshot](screenshot.jpeg)
 
 ## 🔗 Live Demo
 (Coming soon)
