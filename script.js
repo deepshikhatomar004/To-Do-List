@@ -1,18 +1,25 @@
 function addTask(){
-    const newTask = document.createElement('li')
-    const taskList = document.getElementById('tasklist')
-    taskList.appendChild(newTask)
-    newTask.textContent = document.getElementById('inputTask').value
-    document.getElementById('inputTask').value =''
-    deleteTask(newTask)
-}
+    const input = document.getElementById('inputTask');
+    const taskValue = input.value.trim();
 
-function deleteTask(newTask)
-{
-    const deleteBtn = document.createElement('button')
-    deleteBtn.textContent ="Delete"
-    newTask.appendChild(deleteBtn)
-    deleteBtn.onclick = function(){
-        newTask.remove()
+    if(taskValue === ""){
+        return;
     }
+
+    const newTask = document.createElement('li');
+    const taskText = document.createElement('span');
+    taskText.textContent = taskValue;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = "Delete";
+
+    deleteBtn.onclick = function(){
+        newTask.remove();
+    };
+
+    newTask.appendChild(taskText);
+    newTask.appendChild(deleteBtn);
+
+    document.getElementById('tasklist').appendChild(newTask);
+    input.value = '';
 }
